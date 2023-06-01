@@ -1,0 +1,96 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    A View can work without a Model just fine, but when we want
+    to actually use a Model, we need to make the View aware of this
+    and tell it which type we expect the Model to be.
+    This line declares the model type that the view expects.
+    In this case, the view expects a model of
+    type HelloMVCWorld.Models.Movie to be passed to it.
+*@
+@model HelloMVCWorld.Models.Student
+
+@*
+    This block is used to set the layout of the view to null,
+    indicating that no shared layout should be applied to this
+    particular view. It means that this view will have its own
+    independent HTML structure without any shared layout.
+*@
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <h1 class="text-center mt-4">Student Information</h1>
+    <form asp-action="Index" class="form-horizontal mt-5" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row mb-3">
+            <label asp-for="Name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="Phone" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="Email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="Address" class="col-sm-2 col-form-label">Address</label>
+            <div class="col-sm-10">
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="City" class="col-sm-2 col-form-label">City</label>
+            <div class="col-sm-10">
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="PostCode" class="col-sm-2 col-form-label">PostCode</label>
+            <div class="col-sm-10">
+                <input asp-for="PostCode" class="form-control" />
+                <span asp-validation-for="PostCode" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="DoB" class="col-sm-2 col-form-label">Date of Birth</label>
+            <div class="col-sm-10">
+                <input asp-for="DoB" class="form-control" />
+                <span asp-validation-for="DoB" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="Gender" class="col-sm-2 col-form-label">Gender</label>
+            <div class="col-sm-10">
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row mb-3">
+            <label asp-for="Occupation" class="col-sm-2 col-form-label">Occupation</label>
+            <div class="col-sm-10">
+                <input asp-for="Occupation" class="form-control" />
+                <span asp-validation-for="Occupation" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </form>
+</div>

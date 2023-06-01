@@ -1,0 +1,150 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    A View can work without a Model just fine, but when we want
+    to actually use a Model, we need to make the View aware of this
+    and tell it which type we expect the Model to be.
+    This line declares the model type that the view expects.
+    In this case, the view expects a model of
+    type HelloMVCWorld.Models.Movie to be passed to it.
+*@
+@model List<HelloMVCWorld.Models.Student>
+
+@*
+    This block is used to set the layout of the view to null,
+    indicating that no shared layout should be applied to this
+    particular view. It means that this view will have its own
+    independent HTML structure without any shared layout.
+*@
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <h1 class="text-center mt-4">Student List</h1>
+    <a class="btn btn-primary mb-3" asp-area="" asp-controller="Student" asp-action="Index">Add Student</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>PostCode</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.Name</td>
+                    <td>@student.Phone</td>
+                    <td>@student.Email</td>
+                    <td>@student.Address</td>
+                    <td>@student.City</td>
+                    <td>@student.PostCode</td>
+                    <td>@student.DoB</td>
+                    <td>@student.Gender</td>
+                    <td>@student.Occupation</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@{
+    #region
+    @*
+    <form asp-action="Index" class="form-horizontal" method="post">
+    <div class="form-group">
+        <label class="control-label">Name</label>
+        <input asp-for="Name" class="form-control" type="text" placeholder="John Doe"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Phone</label>
+        <input asp-for="Phone" class="form-control" type="number" placeholder="09154289822" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Email</label>
+        <input asp-for="Email" class="form-control" type="email" placeholder="Email"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Address</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">City</label>
+        <input asp-for="City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">PostCode</label>
+        <input asp-for="PostCode" class="form-control" type="number" placeholder="6015" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">DoB</label>
+        <input asp-for="DoB" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Gender</label>
+        <input asp-for="Gender" class="form-control" type="text" placeholder="M"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Occupation</label>
+        <input asp-for="Occupation" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary" />
+    </div>
+    </form>
+    
+    
+    <div class="container mt-5 ms-lg-5">
+    <div class="jumbotron">
+        <h1>Welcome to our website</h1>
+        <p>We offer a wide range of products and services to meet your needs.</p>
+        <a href="#" class="btn btn-primary btn-lg mb-2">Learn More</a>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Product 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt tincidunt, quam velit bibendum mi, vel vehicula nibh quam vel nunc.</p>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Product 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt tincidunt, quam velit bibendum mi, vel vehicula nibh quam vel nunc.</p>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Product 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt tincidunt, quam velit bibendum mi, vel vehicula nibh quam vel nunc.</p>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</div>
+*@
+
+    @*
+    @await Html.PartialAsync("_Greeting")
+
+    @using (Html.BeginForm("Profile", "Home", FormMethod.Post))
+    {
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" />
+        <br>
+
+        <input type="submit" value="Submit" />
+    }
+    *@
+    #endregion
+}
