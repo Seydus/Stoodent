@@ -10550,11 +10550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Efficienly\\Efficienly\\Stoodent.csproj",
+      "projectUniqueName": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Stoodent\\Stoodent\\Stoodent\\Stoodent.csproj",
       "projectName": "Stoodent",
-      "projectPath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Efficienly\\Efficienly\\Stoodent.csproj",
+      "projectPath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Stoodent\\Stoodent\\Stoodent\\Stoodent.csproj",
       "packagesPath": "C:\\Users\\Saidus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Efficienly\\Efficienly\\obj\\",
+      "outputPath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Stoodent\\Stoodent\\Stoodent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Saidus\\AppData\\Roaming\\NuGet\\NuGet.Config",

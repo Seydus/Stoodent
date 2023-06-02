@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h7SfgXi0j5QPQ07m880n+6zJ0O++5162DaMzpeJkNLFESLKr+1AisjdnGb6lqyFaMp8zVUH0fR/WV57ED9zArg==",
+  "dgSpecHash": "PR0DsZo2ecLYVxQPmGZgTuyKrIuDfYG579xvjBvKsTGGqYD8elgiK0Y1n145LDM8tqyZ/M2EKmNm64zoLQB7rQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Efficienly\\Efficienly\\Stoodent.csproj",
+  "projectFilePath": "C:\\Users\\Saidus\\OneDrive\\Documents\\_Software Engineering\\Web Application\\Stoodent\\Stoodent\\Stoodent\\Stoodent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saidus\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Saidus\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -17,6 +17,7 @@ namespace Efficienly.Controllers
         public StudentController(ApplicationDbContext context)
         {
             _context = context;
+
         }
 
         // POST: /Home/Edit
