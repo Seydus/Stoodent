@@ -16,7 +16,6 @@ namespace HelloMVCWorld.Models
         public string City { get; set; }
         public int PostCode { get; set; }
         public DateTime DoB { get; set; }
-        public string Gender { get; set; }
         public string Occupation { get; set; }
     }
 }
