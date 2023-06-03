@@ -1,14 +1,4 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-@*
-    A View can work without a Model just fine, but when we want
-    to actually use a Model, we need to make the View aware of this
-    and tell it which type we expect the Model to be.
-    This line declares the model type that the view expects.
-    In this case, the view expects a model of
-    type HelloMVCWorld.Models.Movie to be passed to it.
-*@
-@model List<HelloMVCWorld.Models.Student>
+﻿@model List<HelloMVCWorld.Models.Student>
 
 @*
     This block is used to set the layout of the view to null,
@@ -34,7 +24,7 @@
                 <th>City</th>
                 <th>PostCode</th>
                 <th>Date of Birth</th>
-@*                <th>Gender</th>*@
+                <th>Gender</th>
                 <th>Occupation</th>
             </tr>
         </thead>
@@ -50,7 +40,6 @@
                     <td>@student.City</td>
                     <td>@student.PostCode</td>
                     <td>@student.DoB</td>
-@*                    <td>@student.Gender</td>*@
                     <td>@student.Occupation</td>
                 </tr>
             }
