@@ -48,5 +48,10 @@ namespace HelloMVCWorld.Controllers
         {
             return View();
         }
+
+        public IActionResult Details(int id)
+        {
+            return Content("Product details for #" + id);
+        }
     }
 }
